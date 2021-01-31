@@ -1,6 +1,6 @@
 GGJ link: https://globalgamejam.org/2021/games/cinema-bump-7
 
-Credits:
+Team:
 
 Bruno Araujo @brunurd - Models, textures, animations, additional programming
 
