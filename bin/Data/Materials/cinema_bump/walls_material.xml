@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<material>
+	<technique name="Techniques/Diff.xml" />
+	<texture name="Textures/cinema_bump/floor_walls_tex.png" unit="diffuse" />
+	<parameter name="MatDiffColor" value="0.496923 0.0585996 0.120448 1" />
+	<parameter name="MatSpecColor" value="0 0 0 35" />
+</material>

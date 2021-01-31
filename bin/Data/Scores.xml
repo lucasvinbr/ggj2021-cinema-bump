@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<scene id="1">
+	<attribute name="Name" value="" />
+	<attribute name="Time Scale" value="1" />
+	<attribute name="Smoothing Constant" value="50" />
+	<attribute name="Snap Threshold" value="5" />
+	<attribute name="Elapsed Time" value="0" />
+	<attribute name="Next Replicated Node ID" value="10" />
+	<attribute name="Next Replicated Component ID" value="23" />
+	<attribute name="Next Local Node ID" value="16777216" />
+	<attribute name="Next Local Component ID" value="16777216" />
+	<attribute name="Variables" />
+	<attribute name="Variable Names" value="" />
+	<component type="Octree" id="1" />
+	<component type="PhysicsWorld" id="2" />
+	<component type="DebugRenderer" id="3" />
+	<node id="2">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Zone" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Zone" id="4">
+			<attribute name="Bounding Box Min" value="-1000 -1000 -1000" />
+			<attribute name="Bounding Box Max" value="1000 1000 1000" />
+			<attribute name="Fog Start" value="1" />
+			<attribute name="Fog End" value="32" />
+		</component>
+	</node>
+	<node id="3">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Wall" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 -8" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="500 500 1" />
+		<attribute name="Variables" />
+		<component type="RigidBody" id="5">
+			<attribute name="Physics Position" value="0 0 -8" />
+		</component>
+		<component type="CollisionShape" id="6" />
+	</node>
+	<node id="4">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Wall" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 8" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="500 500 1" />
+		<attribute name="Variables" />
+		<component type="RigidBody" id="7">
+			<attribute name="Physics Position" value="0 0 8" />
+		</component>
+		<component type="CollisionShape" id="8" />
+		<component type="StaticModel" id="9">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/StoneTiled.xml" />
+		</component>
+	</node>
+	<node id="5">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Wall" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 -0.5 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="16 1 16" />
+		<attribute name="Variables" />
+		<component type="RigidBody" id="10">
+			<attribute name="Physics Position" value="0 -0.5 0" />
+		</component>
+		<component type="CollisionShape" id="11" />
+		<component type="StaticModel" id="12">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/StoneTiled.xml" />
+		</component>
+		<component type="Navigable" id="19" />
+	</node>
+	<node id="6">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Wall" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-8 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 500 500" />
+		<attribute name="Variables" />
+		<component type="RigidBody" id="13">
+			<attribute name="Physics Position" value="-8 0 0" />
+		</component>
+		<component type="CollisionShape" id="14" />
+		<component type="StaticModel" id="15">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/StoneTiled.xml" />
+		</component>
+	</node>
+	<node id="7">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Wall" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="8 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 500 500" />
+		<attribute name="Variables" />
+		<component type="RigidBody" id="16">
+			<attribute name="Physics Position" value="8 0 0" />
+		</component>
+		<component type="CollisionShape" id="17" />
+		<component type="StaticModel" id="18">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/StoneTiled.xml" />
+		</component>
+	</node>
+	<node id="8">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="DirectionalLight" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 5 -12" />
+		<attribute name="Rotation" value="0.976296 0.21644 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Light" id="20">
+			<attribute name="Brightness Multiplier" value="1.45" />
+			<attribute name="Range" value="24" />
+			<attribute name="Light Shape Texture" value="TextureCube;" />
+			<attribute name="Cast Shadows" value="true" />
+			<attribute name="CSM Splits" value="10 50 200 0" />
+			<attribute name="Depth Constant Bias" value="0.00025" />
+		</component>
+		<component type="LuaScriptInstance" id="21">
+			<attribute name="Script Object Type" value="CinemaLight" />
+			<attribute name="curLightColor" value="1 1 1 1" />
+			<attribute name="nextLightChangeTime" value="7.02603054046631" />
+			<attribute name="timeSinceLightChange" value="0" />
+			<attribute name="nextLightColor" value="0.53032 0.727238 0.725504 1" />
+		</component>
+	</node>
+	<node id="9">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="score" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="LuaScriptInstance" id="22" />
+	</node>
+</scene>

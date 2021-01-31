@@ -1,0 +1,2 @@
+Materials/Genericus/Unlit Template.xml
+Materials/Genericus/LitSolid Template.xml
